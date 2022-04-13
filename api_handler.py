@@ -155,7 +155,7 @@ async def add_product(product: schema.Product, db: Session = Depends(get_db),
     return crud.add_product(db, product)
 
 
-@app.get('/storage/product/buy_product')
+@app.get('/storage/buy_product')
 async def buy_product(current_user: schema.User = Depends(get_current_active_user),
                       db: Session = Depends(get_db)):
     """ Endpoint for the purchase of one unit of goods by the buyer """
