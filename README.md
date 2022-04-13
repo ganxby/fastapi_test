@@ -6,3 +6,6 @@ http://127.0.0.1:8000/storage/add_product - this endpoint is used to add a new p
 http://127.0.0.1:8000/storage/buy_product - this endpoint is used to "purchase" a single unit of a product by the customer  
   
 A demonstration of required and optional keys and values, as well as endpoint query methods will be available at http://127.0.0.1:8000/redoc or http://127.0.0.1:8000/docs addresses when the server starts.
+
+
+[ * ] When creating a user, you must specify the values "trader" or "buyer" in the "position" key to differentiate access to endpoints. Without this, requests will not work.
